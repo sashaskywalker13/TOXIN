@@ -1,0 +1,13 @@
+.colors-wrap {
+	display: flex;
+	// flex-direction: row;
+}
+.colors__item {
+
+}
+.colors__item-square {
+	width: 70px;
+	height: 70px;
+	background: $Dark;
+	border-radius: 6px;
+}
