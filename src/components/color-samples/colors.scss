@@ -1,0 +1,55 @@
+.colors-wrap {
+	display: flex;
+	flex-direction: column;
+	line-height: 30px;
+	margin-left: 150px;
+	// flex-direction: row;
+}
+.colors__item {
+	display: inline-flex;
+	align-items: center;
+	padding: 10px 20px;
+}
+.colors__item-square {
+	width: 70px;
+	height: 70px;
+	background: $Dark;
+	border-radius: 6px;
+}
+.colors__item-text {
+	padding-left: 40px;
+	h2 {
+		margin: 0;
+		font-family: Quicksand;
+		font-size: 19px;
+	}
+	p {
+		margin: 0;
+		font-family: Montserrat;
+		font-size: 19px;
+	}
+}
+.colors__item-square-75 {
+	@extend .colors__item-square;
+	background: $Dark-75;
+}
+.colors__item-square-50 {
+	@extend .colors__item-square;
+	background: $Dark-50;
+}
+.colors__item-square-25 {
+	@extend .colors__item-square;
+	background: $Dark-25;
+}
+.colors__item-square-5 {
+	@extend .colors__item-square;
+	background: $Dark-5;
+}
+.colors__item-square-purple {
+	@extend .colors__item-square;
+	background: $Purple;
+}
+.colors__item-square-green {
+	@extend .colors__item-square;
+	background: $Green;
+}

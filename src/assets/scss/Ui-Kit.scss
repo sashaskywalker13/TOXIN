@@ -1,3 +1,15 @@
 @import '../../components/logo/logo';
-@import '../../components/colors&types/colors';
+@import '../../components/color-samples/colors';
+@import '../../components/font-samples/font-samples';
 @import './variables';
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+.font-samples {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+

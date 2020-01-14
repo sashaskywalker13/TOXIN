@@ -1,13 +1,14 @@
-extends ../components/Main/main-base
+extends ../components/main/main-base
 
 include ../components/logo/logo
-include ../components/colors&types/colors
+include ../components/color-samples/colors
+include ../components/font-samples/font-samples
 
 block description
-  meta(name="description" content="Компоненты нашего сайта. Из этих маленьких кусочков собирается большой проект")
+  meta(name="description" content="Компоненты нашего сайта.")
 
 block keywords
-  meta(name="keywords" content="форма поиска номера, форма бронирования номера, кнопка с градиентом")
+  meta(name="keywords" content="")
 
 block title
   title Отель Toxin | Страница с компонентами проекта
@@ -17,10 +18,14 @@ block styles
 
 block content
   +logo
-  +colors
-  +colors
-  +colors
-  +colors
-  +colors
-  +colors
-  +colors
+  .container
+    .colors-wrap
+      +colors('Dark Shade 100%', '#1F2041')
+      +colors('Dark Shade 75%', '#1F2041')(class="colors__item-square-75")
+      +colors('Dark Shade 50%', '#1F2041')(class="colors__item-square-50")
+      +colors('Dark Shade 25%', '#1F2041')(class="colors__item-square-25")
+      +colors('Dark Shade 5%', '#F12041')(class="colors__item-square-5")
+      +colors('Purple', '#BC9CFF')(class="colors__item-square-purple")
+      +colors('Green', '#6FCF97')(class="colors__item-square-green")
+    .font-samples
+      +font-samples
