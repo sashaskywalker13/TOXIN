@@ -2,16 +2,50 @@
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
+	color: $Dark-25;
+	margin: 0 15px;
+	p {
+		margin: 0;
+	}
+	
+}
+.font__desc {
+	p {
+		margin: 0;
+	}
+	margin: 0 15px;
 }
 .font__samples-sub {
+	margin: 25px 0;
 	display: inline-flex;
+	font-family: Quicksand;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	align-items: baseline;
 }
 .font__samples-title {
-	display: inline-flex;
+	@extend .font__samples-sub;
+	font-size: 19px;
 }
 .font__samples-label {
 	display: inline-flex;
+	align-items: baseline;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	margin: 25px 0;
 }
 .font__samples-body {
 	display: inline-flex;
+	align-items: baseline;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: $Dark-75;
 }

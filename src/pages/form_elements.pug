@@ -1,0 +1,21 @@
+extends ../components/main/main-base
+
+include ../components/buttons/button
+
+block description
+  meta(name="description" content="Компоненты нашего сайта.")
+
+block keywords
+  meta(name="keywords" content="")
+
+block title
+  title Отель Toxin | Страница с компонентами проекта
+
+block styles
+  link(rel="stylesheet" href="./assets/scss/Ui-Kit.scss")
+
+block content
+  +button
+  +button__light
+  +button__tran
+  +button__big

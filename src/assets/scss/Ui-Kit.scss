@@ -1,6 +1,7 @@
 @import '../../components/logo/logo';
 @import '../../components/color-samples/colors';
 @import '../../components/font-samples/font-samples';
+@import '../../components/buttons/button';
 @import './variables';
 
 .container {
@@ -11,5 +12,6 @@
 	display: flex;
 	flex-direction: column;
 	width: 400px;
+	margin-right: 190px;
 }
 
