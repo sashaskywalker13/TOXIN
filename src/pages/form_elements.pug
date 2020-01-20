@@ -1,6 +1,10 @@
 extends ../components/main/main-base
 
 include ../components/buttons/button
+include ../components/toggle/toggle
+include ../components/input/input
+include ../components/checkbox/checkbox
+include ../components/radio/radio
 
 block description
   meta(name="description" content="Компоненты нашего сайта.")
@@ -13,9 +17,17 @@ block title
 
 block styles
   link(rel="stylesheet" href="./assets/scss/Ui-Kit.scss")
+  link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
 
 block content
   +button
   +button__light
   +button__tran
   +button__big
+  +toggle
+  +input
+  +checkbox
+  +radio
+  +radio
+  +radio
+  +radio

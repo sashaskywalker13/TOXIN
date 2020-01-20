@@ -1,0 +1,28 @@
+.radio {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+}
+
+// .radio input[type=radio] {
+// 	display:none;
+// }
+.radio label:after {
+	content: '';
+	height:20px;
+	width:20px;
+	border: 1px solid $Dark-25;
+	box-sizing: border-box;
+	border-radius: 4px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.radio input[type=radio]:checked + label:after {
+	height: 20px;
+	width: 20px;
+	border: 1px solid $Purple;
+	box-sizing: border-box;
+	border-radius: 4px;
+}

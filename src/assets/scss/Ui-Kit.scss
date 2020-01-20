@@ -2,6 +2,10 @@
 @import '../../components/color-samples/colors';
 @import '../../components/font-samples/font-samples';
 @import '../../components/buttons/button';
+@import '../../components/toggle/toggle';
+@import '../../components/input/input';
+@import '../../components/checkbox/checkbox';
+@import '../../components/radio/radio';
 @import './variables';
 
 .container {
@@ -14,4 +18,5 @@
 	width: 400px;
 	margin-right: 190px;
 }
+
 
