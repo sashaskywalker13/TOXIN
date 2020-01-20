@@ -1,2 +1,9 @@
 mixin toggle()
-	input.toggle(type="toggle")
+	.toggle
+		.toggle__button
+			input.toggle__input(type="checkbox" id="tog" value="true" checked)
+			label.toggle__text(for="tog") Получить предложение
+			.toggle__circle
+	//- .toggle
+	//- 	input.toggle__button(type="checkbox")
+	//- 	label(class="toggle__text") Получать спецпредложения

@@ -1,6 +1,6 @@
 mixin radio()
 	.radio
-		input(type="radio" id="rad")
-		label(for="rad")
-			.radio__sex
-				p Мужчина
+		input(class="radio__input" type="radio" id="manrad" value="m" name="sex" checked)
+		label(class="radio__text" for="manrad") Мужчина
+		input(class="radio__input" type="radio" id="womanrad" value="w" name="sex")
+		label(class="radio__text" for="womanrad") Женщина
