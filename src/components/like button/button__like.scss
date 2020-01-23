@@ -1,0 +1,49 @@
+.button__like_border {
+	width: 40px;
+	height:20px;
+	background: $Light;
+	border: 1px solid $Dark-25;
+	box-sizing: border-box;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+	padding: 1px 3px;
+	outline: none;
+}
+.button__like_heart {
+	display: flex;
+	color: $Dark-25;
+}
+i.button__like_heart_favorite {
+	font-size: 10px;	
+}
+.button__like_num {
+	display: flex;
+	padding-right: 10px;
+	span {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: $Dark-25;
+	text-align: center;
+	}
+
+}
+.liked {
+
+	border: 1px solid $Purple;
+
+	.button__like_heart {
+
+		color: $Purple;
+	}
+	.button__like_num {
+		span {
+		color: $Purple;
+		}
+
+	}
+}

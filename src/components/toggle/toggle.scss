@@ -1,106 +1,43 @@
-.toggle {
+
+.toggle__button {
 	display: flex;
-	// align-items: center;
+	flex-direction: row;
+}
+.toggle__circle {
+	position: relative;
+	display: inline-block;
+	width:40px;
+	height:20px;
+	border-radius: 10px;
+	border: 1px solid $Dark-25;
+	&::after {
+		content: '';
+		position: absolute;
+		width:12px;
+		height: 12px;
+		border-radius: 10px;
+		background-color: $Dark-25;
+		top: 4px;
+		left: 3px;
+		transition: all 0.3s;
+
+	}
+}
+.toggle__input:checked + .toggle__circle::after {
+	left: 25px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.toggle__input:checked + .toggle__circle {
+	border-color: $Purple;
+}
+.toggle__input {
+	display: none;
+}
+.toggle__text {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
+	padding-left: 10px;
 	color: $Dark-75;
 }
-.toggle__button {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	// position: relative;
-	// display: none;
-}
-.toggle__input {
-	// position: absolute;
-	// opacity: 0;
-	// cursor: pointer;
-	// height:0;
-	// width:0;
-	// display: none;
-	// // margin: 10px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	// content: '';
-	// display: block;
-	height:20px;
-	width:40px;
-	border: 1px solid $Dark-25;
-	box-sizing: border-box;
-	border-radius: 10px;
-	outline: none;
-	// position: absolute;
-	// // background: $Dark-25;
-	// // background-clip: border-box;
-	// // padding: 3px;
-	&.toggle__input:checked {
-		border: 1px solid $Purple;
-		.toggle__circle::before {
-			position: absolute;
-			transform: translateX(-170px);
-		}
-	}
-}
-.toggle__circle {
-	position: relative;
-	width:12px;
-	height: 12px;
-	border-radius: 10px;
-	background: $Dark-25;
-	transform: translateX(-160px);
-	-o-transform: translateX(-160px);
-	-ms-transform: translateX(-160px);
-	-moz-transform: translateX(-160px);
-	-webkit-transform: translateX(-160px);
-	transform: translateX(-160px);
-	&::before {
-		content: '';
-		position: relative;
-		transform: translateX(-170px);
-	    // background: $Dark-25;
-	    // border-radius: 50%;
-	    // content: '';
-	    // height: 12px;
-	    // position: absolute;
-	    // transform: translate(3px, 3px);
-	    // width: 12px;
-	}
-}
-
-.toggle__circle::after {
-	
-	// -webkit-appearance: none;
-	// -moz-appearance: none;
-	// appearance: none;
-}
-// .toggle__input {
-//   background: $Light;transform: translate(23px, 3px);
-//   border: 1px solid $Dark-25;
-//   box-sizing: border-box;
-//   flex-shrink: 0;
-//   height: 20px;
-//   position: relative;
-// }
-// .toggle__input {
-//   border-radius: 10px;
-//   width: 40px;
-
-//   &::before {
-//     background: $Dark-25;
-//     border-radius: 50%;
-//     content: '';
-//     height: 12px;
-//     position: absolute;
-//     transform: translate(3px, 3px);
-//     width: 12px;
-
-//     .toggle__input:checked ~ & {
-//       background: $Purple;
-//       
-//     }
-//   }
-// }

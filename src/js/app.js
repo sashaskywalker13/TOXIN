@@ -1,0 +1,1 @@
+import '../components/like button/button__like.js';

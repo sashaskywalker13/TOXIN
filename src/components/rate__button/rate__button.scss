@@ -1,0 +1,37 @@
+.rate__button {
+	display: flex;
+	width: 120px;
+	justify-content: center;
+	overflow: hidden;
+	flex-direction: row-reverse;
+	position: relative;
+}
+.rate__button .rate__button_star {
+	display: none;
+}
+.rate__button > .rate__button_lab {
+	width: 24px;
+	height: 24px;
+	background-image: url(/assets/img/grade_border.svg);
+	transition: .3s;
+	// background: $Purple-gr;
+	// -webkit-background-clip: text;
+	// background-clip: text;
+	// -webkit-text-fill-color: transparent;
+}
+.rate__button > .rate__button_star:checked ~ .rate__button_lab,
+.rate__button > .rate__button_star:checked ~ .rate__button_lab ~
+.rate__button_star {
+	background-image: url(/assets/img/grade.svg);
+	// background: $Purple-gr;
+	// -webkit-background-clip: text;
+	// background-clip: text;
+	// -webkit-text-fill-color: transparent;
+}
+// .rate__button > .rate__button_star:not(:checked) ~ .rate__button_lab,
+// .rate__button > .rate__button_star:not(:checked) ~ .rate__button_lab ~
+// .rate__button_star-i {
+// 	// background-image: url(/assets/img/grade.svg);
+// 	position: relative;
+// 	display: block;
+// }

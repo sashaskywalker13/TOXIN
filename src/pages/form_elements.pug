@@ -5,6 +5,8 @@ include ../components/toggle/toggle
 include ../components/input/input
 include ../components/checkbox/checkbox
 include ../components/radio/radio
+include ../components/like button/button__like
+include ../components/rate__button/rate__button
 
 block description
   meta(name="description" content="Компоненты нашего сайта.")
@@ -16,18 +18,17 @@ block title
   title Отель Toxin | Страница с компонентами проекта
 
 block styles
-  link(rel="stylesheet" href="./assets/scss/Ui-Kit.scss")
-  link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+  link(rel="stylesheet" href="/assets/scss/Ui-Kit.scss")
+  //- link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
 
 block content
   +button
   +button__light
   +button__tran
   +button__big
-  //- +toggle
-  //- +input
+  +input
   +checkbox
-  //- +radio
-  //- +radio
   +radio
   +toggle
+  +button__like
+  +rate__button
