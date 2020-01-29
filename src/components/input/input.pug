@@ -1,2 +1,17 @@
-mixin input()
-	input.input_main(type="text" placeholder="Email")
+
+mixin input(mask=false)
+  -
+    if (!attributes.type || ['text', 'email', 'password'].includes(attributes.type)) {
+      var inputClass = 'input_main';
+    }
+    else {
+      // var inputClass = `input_masked_date`;
+    }
+    inputClass += ` input_masked_date`;
+    if (mask === 'date') {
+      attributes.placeholder = 'ДД.ММ.ГГГГ';
+      // inputClass += ' input_masked_date'
+    } else {
+    	inputClass = 'input_main';
+    }
+  input.input(class=inputClass)&attributes(attributes)

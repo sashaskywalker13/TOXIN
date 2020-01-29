@@ -11,6 +11,9 @@
 	font-size: 14px;
 	color: $Dark-25;
 	padding-left: 15px;
+	&::-webkit-input-placeholder {
+	 color: $Dark-25;
+	}
 	&:focus {
 		outline: none;
 		border: 1px solid $Dark-50;

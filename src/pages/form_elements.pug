@@ -7,6 +7,7 @@ include ../components/checkbox/checkbox
 include ../components/radio/radio
 include ../components/like button/button__like
 include ../components/rate__button/rate__button
+include ../components/subscription/subscription
 
 block description
   meta(name="description" content="Компоненты нашего сайта.")
@@ -26,9 +27,11 @@ block content
   +button__light
   +button__tran
   +button__big
-  +input
+  +input('date')
   +checkbox
   +radio
   +toggle
   +button__like
   +rate__button
+  +input()(type='email', placeholder='Email')
+  +subscription
