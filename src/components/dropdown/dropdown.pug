@@ -1,0 +1,23 @@
+mixin dropdown()
+	.dropdown
+		.dropdown__input
+			+subscription('expand_more','Cколько гостей')(class="input__sub__dropdown")
+		.dropdown__window
+			.dropdown__window__block
+				h3 взрослые
+				button.dropdown__window__button-min -
+				span 0
+				button.dropdown__window__button-plu +
+			.dropdown__window__block
+				h3 дети
+				button.dropdown__window__button-min -
+				span 0
+				button.dropdown__window__button-plu +
+			.dropdown__window__block
+				h3 младенцы
+				button.dropdown__window__button-min -
+				span 0
+				button.dropdown__window__button-plu +
+			.dropdown__window__button-footer
+				+button__tran('очистить')
+				+button__tran('применить')

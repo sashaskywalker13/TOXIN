@@ -1,10 +1,10 @@
-mixin button()
-	button.button__main click me
-mixin button__light()
-	button.button__main-light click me
-mixin button__tran()
-	button.button__main-tran click me
-mixin button__big()
-	button.button__main-big перейти к оплате 
+mixin button(name)
+	button.button__main=name
+mixin button__light(name)
+	button.button__main-light=name
+mixin button__tran(name)
+	button.button__main-tran=name
+mixin button__big(name)
+	button.button__main-big=name
 		.button__main-big-arrow
 			i.material-icons arrow_forward

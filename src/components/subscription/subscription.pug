@@ -1,4 +1,4 @@
-mixin subscription()
-	input.input__sub(placeholder='Email')
-	button.button__input-arrow
-		i.material-icons arrow_forward
+mixin subscription(icon, placeholder)
+		input(class!=attributes.class)(placeholder=placeholder)
+		button.button__input-arrow
+			i.material-icons=icon
