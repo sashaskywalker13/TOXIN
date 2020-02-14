@@ -7,5 +7,4 @@ import '../components/pagination/pagination.js';
 
 import '../../node_modules/inputmask/dist/jquery.inputmask.min.js';
 import '../../node_modules/ion-rangeslider/js/ion.rangeSlider.min.js';
-// import '../../node_modules/paginationjs/dist/pagination.min.js';
-import '../assets/js/jquery.simplePagination.js';
+import '../../node_modules/paginationjs/dist/pagination.min.js';
