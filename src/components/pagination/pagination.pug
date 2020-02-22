@@ -1,6 +1,10 @@
 mixin pagination()
 	.pagination
 		.pagination__list
-			a.pagination__page-link(href="#") 1
-			a.pagination__page-link(href="#") 2
-			a.pagination__page-link(href="#") 3
+			a.material-icons.pagination__list-arrow(href="#") arrow_back
+			a.pagination__list-link.active(href="#") 1
+			a.pagination__list-link(href="#") 2
+			a.pagination__list-link(href="#") 3
+			a.material-icons.pagination__list-arrow(href="#") arrow_forward
+		.pagination__diraction
+			span 1 – 12 из 100+ вариантов аренды

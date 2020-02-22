@@ -1,4 +1,4 @@
-mixin checkbox()
+mixin checkbox(text)
 	.checkbox
 		input(class="checkbox__input" type="checkbox" id="check")
-		label(for="check") Можно курить 
+		label(for="check")= text

@@ -11,6 +11,7 @@ include ../components/subscription/subscription
 include ../components/dropdown/dropdown
 include ../components/rangeSlider/rangeSlider
 include ../components/pagination/pagination
+include ../components/datepicker/datepicker
 
 block description
   meta(name="description" content="Компоненты нашего сайта.")
@@ -24,23 +25,24 @@ block title
 block styles
   link(rel="stylesheet" href="/assets/scss/Ui-Kit.scss")
   //- link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 block content
-  +button('click me')
-  +button__light('click me')
-  +button__tran('click me')
-  +button__big('перейти к оплате')
-  +input('date')
-  +checkbox
-  +radio
-  +toggle
-  +button__like
-  +button__like
-  +rate__button
-  +input()(type='email', placeholder='Email')
-  +subscription('expand_more', 'Сколько гостей')(class="input__sub")
-  +subscription('arrow_forward', 'Email')(class="input__sub")
-  +dropdown
-  +dropdown
-  +rangeSlider
-  +pagination
+  //- +button('click me')
+  //- +button__light('click me')
+  //- +button__tran('click me')
+  //- +button__big('перейти к оплате')
+  //- +input('date')
+  //- +checkbox('собака')
+  //- +radio
+  //- +toggle
+  //- +button__like
+  //- +button__like
+  //- +rate__button
+  //- +input()(type='email', placeholder='Email')
+  //- +subscription('expand_more', 'Сколько гостей')(class="input__sub")
+  //- +subscription('arrow_forward', 'Email')(class="input__sub")
+  //- +dropdown
+  //- +rangeSlider
+  //- +pagination
+  +datepicker
