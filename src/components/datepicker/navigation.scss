@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   min-height: $datepickerNavigationHeight;
-  padding: $datepickerPadding;
+  padding: 10px 20px 0 20px;
 
   .-only-timepicker- & {
     display: none;
@@ -29,7 +29,7 @@
   user-select: none;
 
   &:hover {
-    background: map_get($datepickerBG, hover);
+    // background: map_get($datepickerBG, hover);
   }
 
   &.-disabled- {
@@ -54,7 +54,7 @@
   font-weight: bold;
   font-size: 19px;
   border-radius: $datepickerBorderRadius;
-  padding: 0 8px;
+  // padding: 0 8px;
   color: map_get($datepickerTextColor, currentDate);
 
   i {
@@ -63,7 +63,7 @@
   }
 
   &:hover {
-    background: map_get($datepickerBG, hover);
+    // background: map_get($datepickerBG, hover);
   }
 
   &.-disabled- {
@@ -77,8 +77,9 @@
 
 .datepicker--buttons {
   display: flex;
-  justify-content: space-around;
-  padding: $datepickerPadding;
+  margin: 0 20px 0 20px;
+  justify-content: space-between;
+  padding: 0 0 20px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -89,15 +90,10 @@
 .datepicker--button {
   color: map_get($datepickerTextColor, button);
   cursor: pointer;
-  border-radius: $datepickerBorderRadius;
-  flex: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 32px;
+  height: 15px;
 
   &:hover {
     color: map_get($datepickerTextColor, common);
-    background: map_get($datepickerBG, hover);
+    // background: map_get($datepickerBG, hover);
   }
 }

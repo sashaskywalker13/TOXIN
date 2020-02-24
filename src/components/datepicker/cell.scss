@@ -70,30 +70,33 @@
   &.-range-from- {
 
     background-color: map_get($datepickerBG, inRange);
-    border-radius: 50%;
+    border-radius: 25px 0 0 25px;
   }
   &.-range-to- {
     background-color: map_get($datepickerBG, inRange);
-    border-radius:  50%;
+    border-radius:  0 25px 25px 0;
   }
 
   &.-range-from-.-range-to- {
-    border-radius: 50%;
+    background-color: map_get($datepickerBG, inRange);
 
   }
 
   &.-selected- {
     color: #fff;
     border: none;
+    background-color: map_get($datepickerBG, inRange);
     background: map_get($datepickerBG, selected);
+    border-radius: 50%;
+
 
     &.-current- {
       color: #fff;
-      background: map_get($datepickerBG, selected);
+      // background: map_get($datepickerBG, selected);
     }
 
     &.-focus- {
-      background: map_get($datepickerBG, selectedHover);
+      // background: map_get($datepickerBG, selectedHover);
     }
   }
 
@@ -108,20 +111,21 @@
 .datepicker--days-names {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px 0 3px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
+  height: 40px;
 }
 
 .datepicker--day-name {
   color: map_get($datepickerTextColor, dayNames);
   display: flex;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   flex: 1;
   text-align: center;
-  text-transform: uppercase;
   font-size: 12px;
 }
 
@@ -129,6 +133,7 @@
 // -------------------------------------------------
 
 .datepicker--cell-day {
+  height: 40px;
   width: (100/7)#{'%'};
 
   &.-other-month- {
