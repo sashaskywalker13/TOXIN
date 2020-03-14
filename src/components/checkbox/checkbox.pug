@@ -1,4 +1,8 @@
-mixin checkbox(text)
+mixin checkbox(text = '', theme = '', description = '')
+	- const className = theme ? `checkbox__input_${theme}` : 'checkbox__input';
+	
 	.checkbox
-		input(class="checkbox__input" type="checkbox" id="check")
-		label(for="check")= text
+		input(class= className type="checkbox" id="check")
+		label(class= 'checkbox__input_rich_label' for="check")= text
+	if description
+	span.checkbox__input_rich_description= description

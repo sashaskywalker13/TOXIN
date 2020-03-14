@@ -1,0 +1,25 @@
+.checkbox-expandable {
+	&__title {
+		display: flex;
+		align-items: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: $Dark;
+		text-align: center;
+		i {
+			margin-left: 30px;
+			color: $Dark-50;
+			&::after {
+				transform: rotate(-135deg);
+			}
+		}
+	}
+	&__list {
+		list-style-type: none;
+		padding: 0;		
+	}
+
+}

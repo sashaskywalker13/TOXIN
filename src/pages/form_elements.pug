@@ -12,6 +12,8 @@ include ../components/dropdown/dropdown
 include ../components/rangeSlider/rangeSlider
 include ../components/pagination/pagination
 include ../components/datepicker/datepicker
+include ../components/checkbox-expandable/checkbox-expandable
+include ../components/bullet-list/bullet-list
 
 block description
   meta(name="description" content="Компоненты нашего сайта.")
@@ -33,7 +35,8 @@ block content
   //- +button__tran('click me')
   //- +button__big('перейти к оплате')
   //- +input('date')
-  //- +checkbox('собака')
+  +checkbox('собака', 'rich', 'На 1 этаже вас встретит специалист  и проводит до номера.')
+  +checkbox('Cобака', 'rich', 'На 1 этаже вас встретит')
   //- +radio
   //- +toggle
   //- +button__like
@@ -45,4 +48,17 @@ block content
   //- +dropdown
   //- +rangeSlider
   //- +pagination
-  +datepicker
+  //- +datepicker
+  -
+    const checkboxesExpandable =
+                [
+                  'Завтрак',
+                  'Письменный стол'
+                  // {"id": "field-desk", "title": "Письменный стол", "name": "desk", "checked": true},
+                  // {"id": "field-chair", "title": "Стул для кормления", "name": "chair", "checked": true},
+                  // {"id": "field-bed", "title": "Кроватка", "name": "bed", "checked": true},
+                  // {"id": "field-tv", "title": "Телевизор", "name": "tv"},
+                  // {"id": "field-shampoo", "title": "Шампунь", "name": "shampoo"}
+                ];
+  //- +checkbox-expandable({'title': 'expandable checkbox list', 'icon': 'expand_more', 'items': checkboxesExpandable})
+  +bullet(['Нельзя с питомцами', 'Без вечеринок и анимаций'])

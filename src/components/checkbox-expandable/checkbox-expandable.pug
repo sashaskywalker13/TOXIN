@@ -1,0 +1,8 @@
+mixin checkbox-expandable({ title = "expandable checkbox list", icon = "expand_more", items = []} = {})
+	.checkbox-expandable
+		span.checkbox-expandable__title= title
+			i.material-icons= icon
+		ul.checkbox-expandable__list
+			each item in items
+				li.checkbox-expandable__item
+					+checkbox(item)

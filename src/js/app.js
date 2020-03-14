@@ -4,6 +4,7 @@ import '../components/dropdown/dropdown.js';
 import '../components/rangeSlider/rangeSlider.js';
 import '../components/pagination/pagination.js';
 import '../components/datepicker/datepicker.js';
+import '../components/checkbox-expandable/checkbox-expandable.js';
 
 
 import '../../node_modules/inputmask/dist/jquery.inputmask.min.js';

@@ -1,0 +1,23 @@
+.bullet {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: $Dark-75;
+	padding: 20px;
+	list-style-type: none;
+	&__item {
+		position: relative;
+		margin-bottom: 10px;
+		&::before {
+		position: absolute;
+		top: 5px;
+		left: -20px;
+		content: '';
+		width: 10px;
+		height: 10px;
+		background-color: $Dark-25;
+		border-radius: 50%;
+		}
+	}
+}
