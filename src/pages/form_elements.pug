@@ -14,6 +14,8 @@ include ../components/pagination/pagination
 include ../components/datepicker/datepicker
 include ../components/checkbox-expandable/checkbox-expandable
 include ../components/bullet-list/bullet-list
+include ../components/advantages/advantages
+include ../components/reviews/reviews
 
 block description
   meta(name="description" content="Компоненты нашего сайта.")
@@ -35,8 +37,8 @@ block content
   //- +button__tran('click me')
   //- +button__big('перейти к оплате')
   //- +input('date')
-  +checkbox('собака', 'rich', 'На 1 этаже вас встретит специалист  и проводит до номера.')
-  +checkbox('Cобака', 'rich', 'На 1 этаже вас встретит')
+  //- +checkbox('собака', 'rich', 'На 1 этаже вас встретит специалист  и проводит до номера.')
+  //- +checkbox('Cобака', 'rich', 'На 1 этаже вас встретит')
   //- +radio
   //- +toggle
   //- +button__like
@@ -61,4 +63,7 @@ block content
                   // {"id": "field-shampoo", "title": "Шампунь", "name": "shampoo"}
                 ];
   //- +checkbox-expandable({'title': 'expandable checkbox list', 'icon': 'expand_more', 'items': checkboxesExpandable})
-  +bullet(['Нельзя с питомцами', 'Без вечеринок и анимаций'])
+  //- +bullet(['Нельзя с питомцами', 'Без вечеринок и анимаций'])
+  +advantages()
+  +advantages({'title': 'Комфорт', 'icon': 'location_city', 'description': 'Шумопоглащяющие стены'})
+  +reviews({'avatar': '/assets/img/avatar.png', 'name': 'Мурад Сарафанов', 'desc': 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 'time': '5 дней назад', 'like': '17'})

@@ -1,0 +1,10 @@
+mixin reviews({avatar='', name='', time='', desc='', like= '0'}={})
+	.reviews
+		.reviews__block
+			img.reviews__block-avatar(src= avatar alt= name)
+			.reviews__block-like
+				+button__like(like)
+		.reviews__text
+			span.reviews__text-name= name
+			p.reviews__text-time= time
+			p.reviews__text-desc= desc
