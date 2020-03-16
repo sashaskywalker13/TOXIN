@@ -1,12 +1,19 @@
 .dropdown {
 	display: flex;
 	flex-direction: column;
-	width: 320px;
+	width: 100%;
+	&__input {
+		.button__input-arrow {
+			i.material-icons {
+				color: $Dark-50;
+			}
+		}
+	}
 }
 .dropdown__window {
-	display: flex;
+	display: none;
 	flex-direction: column;
-	width: 320px;
+	width: 100%;
 	border: 1px solid $Dark-50;
 	border-top: none;
 	box-sizing: border-box;

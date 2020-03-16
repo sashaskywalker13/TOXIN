@@ -4,6 +4,7 @@ $(document).ready(function() {
 	$('.dropdown__input').on('click', function () {
 		let form = $(this).closest('.dropdown').find('.dropdown__window');
 		form.slideToggle();
+		form.css('display', 'flex');
 	});
 
 	let numberChanger = function() {

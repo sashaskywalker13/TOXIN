@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.datepicker-here').datepicker({
+	$('.datepicker-her').datepicker({
 		language: {
 			    days: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
 			    daysShort: ['Вос','Пон','Вто','Сре','Чет','Пят','Суб'],

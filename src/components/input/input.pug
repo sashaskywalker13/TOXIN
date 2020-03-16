@@ -1,17 +1,20 @@
 
-mixin input(mask=false)
+mixin input(mask=false, arrow='')
   -
     if (!attributes.type || ['text', 'email', 'password'].includes(attributes.type)) {
-      var inputClass = 'input_main';
+      var inputClass = 'input__main';
     }
     else {
       // var inputClass = `input_masked_date`;
     }
-    inputClass += ` input_masked_date`;
+    inputClass += ` input__masked__date`;
     if (mask === 'date') {
       attributes.placeholder = 'ДД.ММ.ГГГГ';
       // inputClass += ' input_masked_date'
     } else {
-    	inputClass = 'input_main';
+        inputClass = 'input__main';
     }
   input.input(class=inputClass)&attributes(attributes)
+  if arrow
+  button.input__main__button-arrow
+    i.material-icons= arrow

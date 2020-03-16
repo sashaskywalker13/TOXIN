@@ -1,0 +1,15 @@
+mixin search-card()
+	article.search-card
+		h2.search-card__title Найдём номера под ваши пожелания
+		.search-card__datepicker
+			.search-card__datepicker_arrival
+				h3 прибытие
+				+datepicker()
+			.search-card__datepicker_departure
+				h3 выезд
+				+datepicker()
+		.search-card__guest
+			h3.search-card__guest-text гости
+			+dropdown()
+		.search-card__button
+			+button__big('подобрать номер')

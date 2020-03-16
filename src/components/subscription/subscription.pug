@@ -1,4 +1,4 @@
-mixin subscription(icon, placeholder)
-		input(class!=attributes.class)(placeholder=placeholder)
+mixin subscription({icon = '', placeholder = '', mask= ''}={})
+		+input(mask)(class!=attributes.class)(placeholder=placeholder)
 		button.button__input-arrow
 			i.material-icons=icon
