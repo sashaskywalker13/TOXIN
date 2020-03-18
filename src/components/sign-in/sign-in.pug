@@ -1,0 +1,12 @@
+mixin sign-in()
+	article.sign-in
+		h2.sign-in__title Войти
+		form.sign-in__form
+			.sign-in__form_input
+				+input()(class='input__sign-in')(placeholder='Email')
+				+input()(class='input__sign-in')(placeholder='Пароль')
+			.sign-in__form_button
+				+button__big('войти')
+			.sign-in__form_account
+				span Нет аккаунта на Toxin?
+				+button__light('Создать')

@@ -1,0 +1,23 @@
+mixin sign-up-card()
+	article.sign-up-card
+		h2.sign-up-card__title Регистрация аккаунта
+		form.sign-up-card__form
+			.sign-up-card__form_input
+				+input()(class='input__sign-up-card')(placeholder='Имя')
+				+input()(class='input__sign-up-card')(placeholder='Фамилия')
+			.sign-up-card__form_radio
+				+radio()
+			.sign-up-card__form_date
+				h3 дата рождения
+				+input('date')(class='input__sign-up-card')
+			.sign-up-card__form_service
+				h3 данные для входа в сервис
+				+input()(class='input__sign-up-card')(placeholder='Email')
+				+input()(class='input__sign-up-card')(placeholder='Пароль')
+			.sign-up-card__form_toggle
+				+toggle()
+			.sign-up-card__form_button
+				+button__big('Перейти к оплате')
+			.sign-up-card__form_account
+				span Уже есть аккаунт на Toxin
+				+button__light('Войти')

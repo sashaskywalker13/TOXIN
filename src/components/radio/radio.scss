@@ -4,7 +4,6 @@
 	// position: relative;
 	}
 .radio__input {
-	margin: 10px 10px 10px 20px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -18,6 +17,7 @@
 	outline: none;
 }
 .radio__text {
+	margin: 0 10px 0 10px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
