@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.datepicker-her').datepicker({
+	$('.datepicker-here').datepicker({
 		language: {
 			    days: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
 			    daysShort: ['Вос','Пон','Вто','Сре','Чет','Пят','Суб'],
@@ -13,7 +13,7 @@ $(document).ready(function() {
 		navTitles: {
 		    days: 'MM <i>yyyy</i>',
 		},
-		range: true,
+		// range: true,
 		clearButton: true,
 		todayButton: new Date(),
 		multipleDatesSeparator: ' - ',

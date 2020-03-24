@@ -5,6 +5,7 @@
 	&__input {
 		.button__input-arrow {
 			i.material-icons {
+				display: flex;
 				color: $Dark-50;
 			}
 		}

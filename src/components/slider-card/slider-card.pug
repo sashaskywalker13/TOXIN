@@ -1,0 +1,31 @@
+mixin slider-card(lux='')
+	.slider-card
+		.slider-card__viewer
+			.slider-card__viewer_group
+					img(src="../../assets/img/slider-card.jpg", alt="photo")
+					img(src="../../assets/img/slider-card.jpg", alt="photo")
+					img(src="../../assets/img/slider-card.jpg", alt="photo")
+					img(src="../../assets/img/slider-card.jpg", alt="photo")
+					img(src="../../assets/img/slider-card.jpg", alt="photo")
+			.slider-card__viewer_button
+				.slide-btn.active
+				.slide-btn
+				.slide-btn
+				.slide-btn
+			.slider-card__viewer_arrow
+		.slider-card__room
+			p.slider-card__room_info №
+				span.slider-card__room_info-number 888
+				if lux
+				span.slider-card__room_info-type= lux
+			p.slider-card__room_day
+				span.slider-card__room_day-price 9990₽
+				| в сутки
+		.slider-card__border
+		.slider-card__rate
+			.slider-card__rate_button
+				+rate__button()
+			.slider-card__rate_reviews
+				p.slider-card__rate_reviews-number 145
+					span.slider-card__rate_reviews-number--text Отзывов
+
