@@ -1,0 +1,36 @@
+mixin footer-widgets()
+	.footer-widgets
+		.footer-widgets__container
+			.footer-widgets__main
+				.footer-widgets__main_logo
+					img(src="../../assets/img/Logo-color.svg", alt="logo")
+					p.footer-widgets__main_logo-text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+				nav.footer-widgets__main_navigation
+					-
+						const itemsMenu = 
+						[
+							{'title' : 'navigation', 'subItems' : ['About Us', 'News', 'Support', 'Products']},
+							{'title' : 'about us', 'subItems' : ['who we are', 'our team', 'Support', 'Products']},
+							{'title' : 'support', 'subItems' : ['About Us', 'News', 'Support']}
+						];
+					each itemMenu in itemsMenu
+						.footer-widgets__main_navigation_items
+							span.footer-widgets__main_navigation_items-title= itemMenu.title
+							ul.footer-widgets__main_navigation_items-list
+								each item in itemMenu.subItems
+									li.footer-widgets__main_navigation_items-item
+										a(href="#").footer-widgets__main_navigation_items-item--link= item
+				.footer-widgets__main_subscribe
+					span.footer-widgets__main_subscribe-title Subscribe to our newsletter
+					p.footer-widgets__main_subscribe-text Receive our latest news and 
+						| promotions in your inbox!
+					+subscription({'icon' : 'arrow_forward', 'placeholder' : 'Your email address'})
+	.footer-widgets__bar
+		p.footer-widgets__bar_text Copyright © 2018 Toxin UI Kit. All rights reserved.
+		.footer-widget__bar_icons
+			a(href="")
+				<i class="fab fa-twitter"></i>
+			a(href="")
+				<i class="fab fa-facebook-square"></i>
+			a(href="")
+				<i class="fab fa-instagram"></i>

@@ -1,0 +1,43 @@
+.header {
+	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+	padding: 10px 140px;
+	.header__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		.header__navigation {
+			flex-grow: 1;
+			&_site {
+				display: flex;
+				justify-content: flex-end;
+				&-item {
+					margin-right: 30px;
+					font-family: Montserrat;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					&--link {
+						color: $Dark-50;
+					}
+					&--bold {
+						font-weight: bold;
+						color: $Dark-75;
+					}
+				}
+			}
+		}
+		.header__button {
+			&_register {
+				display: flex;
+				justify-content: space-between;
+				button {
+					height: 34px;
+				}
+				&-login {
+					padding-right: 20px;
+				}
+			}				
+		}
+	}
+}

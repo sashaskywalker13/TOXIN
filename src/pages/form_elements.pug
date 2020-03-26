@@ -21,6 +21,9 @@ include ../components/sign-up-card/sign-up-card
 include ../components/sign-in/sign-in
 include ../components/book-card/book-card
 include ../components/slider-card/slider-card
+include ../components/header/header
+include ../components/footer-widgets/footer-widgets
+include ../components/footer-creative/footer-creative
 
 block description
   meta(name="description" content="Компоненты нашего сайта.")
@@ -72,8 +75,11 @@ block content
   //- +advantages()
   //- +advantages({'title': 'Комфорт', 'icon': 'location_city', 'description': 'Шумопоглащяющие стены'})
   //- +reviews({'avatar': '/assets/img/avatar.png', 'name': 'Мурад Сарафанов', 'desc': 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 'time': '5 дней назад', 'like': '17'})
-  //- +search-card()
-  //- +sign-up-card()
-  //- +sign-in()
-  //- +book-card()
+  +search-card()
+  +sign-up-card()
+  +sign-in()
+  +book-card()
   +slider-card('люкс')
+  +header()
+  +footer-widgets()
+  +footer-creative()

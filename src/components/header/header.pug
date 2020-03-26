@@ -1,0 +1,26 @@
+mixin header()
+	header.header
+		.header__container
+			.header__logo
+				img(src="../../assets/img/Logo-color.svg", alt="лого")
+			nav.header__navigation
+				ul.header__navigation_site
+					li.header__navigation_site-item
+						a(href="#").header__navigation_site-item--link.header__navigation_site-item--bold Home
+					li.header__navigation_site-item
+						a(href="#").header__navigation_site-item--link About us
+					li.header__navigation_site-item
+						a(href="#").header__navigation_site-item--link Services
+					li.header__navigation_site-item
+						a(href="#").header__navigation_site-item--link Careers
+					li.header__navigation_site-item
+						a(href="#").header__navigation_site-item--link News
+					li.header__navigation_site-item
+						a(href="#").header__navigation_site-item--link Documentation
+			.header__button
+				ul.header__button_register
+					li.header__button_register-login
+						+button__light('Login')
+					li.header__button_register-reg
+						+button('Register')
+				
