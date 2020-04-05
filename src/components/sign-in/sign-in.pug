@@ -3,8 +3,8 @@ mixin sign-in()
 		h2.sign-in__title Войти
 		form.sign-in__form
 			.sign-in__form_input
-				+input()(class='input__sign-in')(placeholder='Email')
-				+input()(class='input__sign-in')(placeholder='Пароль')
+				+input()(class!=attributes.input__sign-up-card, placeholder= 'Email')
+				+input()(class!=attributes.input__sign-up-card, placeholder= 'Пароль')
 			.sign-in__form_button
 				+button__big('войти')
 			.sign-in__form_account

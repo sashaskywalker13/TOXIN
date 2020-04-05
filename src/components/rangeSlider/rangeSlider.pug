@@ -1,5 +1,5 @@
-mixin rangeSlider()
+mixin rangeSlider(text='диапазон цены')
 	.range__slider
-		span.range__slider__text range slider
+		span.range__slider__text= text
 		label.range__slider__label(for="range")
 		input.range-slider__fuild.js-range-slider(name="my_range" value="" type="text" id="range")

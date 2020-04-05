@@ -1,10 +1,10 @@
 include ../input/input
 include ../buttons/button
 
-mixin dropdown()
+mixin dropdown(placeholder = 'Cколько гостей')
 	.dropdown
 		.dropdown__input
-			+input(false,'expand_more')(placeholder='Cколько гостей')(class='input__dropdown')
+			+input(false,'expand_more')(class!=attributes.input__dropdown placeholder=placeholder)
 		.dropdown__window
 			.dropdown__window__block
 				h3 взрослые

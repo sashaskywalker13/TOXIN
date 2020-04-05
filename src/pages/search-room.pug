@@ -1,0 +1,84 @@
+extends ../components/main/main-base
+
+include ../components/header/header
+include ../components/footer-widgets/footer-widgets
+include ../components/datepicker/datepicker
+include ../components/dropdown/dropdown
+include ../components/rangeSlider/rangeSlider
+include ../components/checkbox/checkbox
+include ../components/checkbox-expandable/checkbox-expandable
+include ../components/slider-card/slider-card
+include ../components/pagination/pagination
+
+block description
+  meta(name="description" content="Компоненты нашего сайта.")
+
+block keywords
+  meta(name="keywords" content="")
+
+block title
+  title Отель Toxin | Страница с компонентами проекта
+
+block styles
+  link(rel="stylesheet" href="/assets/scss/Ui-Kit.scss")
+  //- link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+block content
+  .search-room
+    .search-room__header
+        +header()
+    .search-room__filter
+        .search-room__filter_datepicker
+            h3 Даты пребывания в отеле
+            +datepicker()
+        .search-room__filter_guest
+            h3 Гости
+            +dropdown()
+        .search-room__filter_range-price
+            +rangeSlider()
+        .search-room__filter_checkbox
+            h3 Checkbox buttons
+            +checkbox('Можно курить')
+            +checkbox('Можно с питомцами')
+            +checkbox('Можно пригласить гостей (до 10 человек)')
+        .search-room__filter_availability
+            h3 Доступность
+            +checkbox('Широкий коридор','rich', 'Ширина коридоров в номере не менее 91 см.')
+            +checkbox('Помощник для инвалидов','rich', 'На 1 этаже вас встретит специалист  и проводит до номера.')
+        .search-room__filter_amenities
+            h3 Удобства номера
+            +dropdown()
+        .search-room__filter_extra
+            -
+                const checkboxesExpandable =
+                            [
+                              'Завтрак',
+                              'Письменный стол',
+                              'Стул для кормления',
+                              'Кроватка',
+                              'Телевизор',
+                              'Шампунь',
+                              'Телевизор',
+                              'Шампунь'
+                            ];
+            +checkbox-expandable({'title': 'дополнительные удобства', 'icon': 'expand_more', 'items': checkboxesExpandable})
+    .search-room__cards
+        h2.search-room__cards_title Номера, которые мы для вас подобрали
+        .search-room__cards_room
+            +slider-card()
+            +slider-card()
+            +slider-card()
+            +slider-card()
+            +slider-card()
+            +slider-card()
+            +slider-card()
+            +slider-card()
+            +slider-card()
+            +slider-card()
+            +slider-card()
+            +slider-card()
+        .search-room__cards_pagination
+            +pagination()
+    
+    .search-room__footer
+        +footer-widgets()

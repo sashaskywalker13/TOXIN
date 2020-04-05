@@ -1,5 +1,9 @@
+@import '../checkbox/checkbox';
+
 .checkbox-expandable {
+	width: 100%;
 	&__title {
+		width: 100%;
 		display: flex;
 		align-items: center;
 		font-family: Montserrat;
@@ -8,10 +12,9 @@
 		font-size: 12px;
 		text-transform: uppercase;
 		color: $Dark;
-		text-align: center;
 		i {
-			margin-left: 30px;
 			color: $Dark-50;
+			margin-left: 12px;
 			&::after {
 				transform: rotate(-135deg);
 			}
@@ -19,7 +22,8 @@
 	}
 	&__list {
 		list-style-type: none;
-		padding: 0;		
+		padding: 0;
+
 	}
 
 }

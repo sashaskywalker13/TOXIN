@@ -3,6 +3,6 @@ mixin checkbox(text = '', theme = '', description = '')
 	
 	.checkbox
 		input(class= className type="checkbox" id="check")
-		label(class= 'checkbox__input_rich_label' for="check")= text
-	if description
-	span.checkbox__input_rich_description= description
+		label(class= `${className}_label` for="check")= text
+			if description
+			p.checkbox__input_rich_description= description

@@ -1,6 +1,6 @@
 include ../input/input
 
 mixin subscription({icon = '', placeholder = '', mask= ''}={})
-		+input(mask)(class!=attributes.class)(placeholder=placeholder)
+		+input(mask)(class!=attributes.class placeholder=placeholder)
 		button.button__input-arrow
 			i.material-icons=icon
