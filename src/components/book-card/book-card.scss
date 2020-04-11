@@ -1,3 +1,7 @@
+@import '../datepicker/datepicker';
+@import '../dropdown/dropdown';
+@import '../buttons/button';
+
 .book-card {
 	display: flex;
 	flex-direction: column;
@@ -9,6 +13,9 @@
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	padding: 30px;
+	&__form_datepicker-departure {
+		padding-left: 20px;
+	}
 	&__room {
 		display: flex;
 		justify-content: space-between;

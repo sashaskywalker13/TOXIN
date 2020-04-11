@@ -1,0 +1,87 @@
+.room-details {
+    display: grid;
+	grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: auto;
+	grid-template-areas:
+		"header header header"
+        "photo photo photo"
+        "main main main"
+        "footer footer footer";
+    &__header {
+        grid-area: header;
+    }
+    &__room-photo {
+        grid-area: photo;
+        display: grid;
+        img {
+            width: 100%;
+        }
+        &_block {
+            display: grid;
+            // align-items: stretch;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            // justify-self: stretch;
+            // align-self: stretch;   
+        }
+        &_block-1 {
+            display: grid;
+            // align-items: stretch;
+            grid-column-start: 3;
+            // justify-self: stretch;
+            // align-self: stretch;
+            img {
+                height: 50%;
+            }
+        }
+    }
+    &__main {
+        display: grid;
+        grid-area: main;
+        margin: 70px 140px;
+        h3 {
+            margin-bottom: 20px;
+        }
+        &_block-1 {
+            display: grid;
+            grid-column: 1 / span 2 ;
+            grid-template-columns: repeat(2, 1fr);
+            margin-right: 70px;
+            .room-details__main_information {
+                grid-column: 1;
+                margin-right: 70px;
+            }
+            .room-details__main_impression {
+                grid-column: 2;
+            }
+            .room-details__main_reviews {
+                grid-column: span 2;
+                margin: 30px 0;
+
+            }
+            .room-details__main_rules {
+                grid-column: 1;
+                margin-right: 70px;
+            }
+            .room-details__main_cancel {
+                grid-column: 2;
+                p {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                color: $Dark-75;
+                line-height: 24px;                  
+                }
+
+            }
+        }
+        &_block-2 {
+            grid-column-start: 3;
+
+        }
+    }
+    &__footer {
+        grid-area: footer;
+    }
+}

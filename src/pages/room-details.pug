@@ -1,0 +1,57 @@
+extends ../components/main/main-base
+
+include ../components/header/header
+include ../components/footer-widgets/footer-widgets
+include ../components/book-card/book-card
+include ../components/advantages/advantages
+include ../components/reviews/reviews
+include ../components/bullet-list/bullet-list
+
+block description
+  meta(name="description" content="Компоненты нашего сайта.")
+
+block keywords
+  meta(name="keywords" content="")
+
+block title
+  title Отель Toxin | Страница с компонентами проекта
+
+block styles
+  link(rel="stylesheet" href="/assets/scss/Ui-Kit.scss")
+  //- link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+block content
+  .room-details
+    .room-details__header
+      +header()
+    .room-details__room-photo
+      .room-details__room-photo_block
+        img(src="../assets/img/room-details-1.jpg", alt="")
+      .room-details__room-photo_block-1
+            img(src="../assets/img/room.png", alt="")
+            img(src="../assets/img/room-details-3.jpg", alt="")
+
+    .room-details__main
+      .room-details__main_block-1
+        .room-details__main_information
+          h3 Сведения о номере
+          +advantages({'title': 'Комфорт', 'icon': 'insert_emoticon', 'description': 'Шумопоглащяющие стены'})
+          +advantages({'title': 'Удобство', 'icon': 'location_city', 'description': 'Окно в каждой из спален'})
+          +advantages({'title': 'Уют', 'icon': 'whatshot', 'description': 'Номер оснащен камином'})
+        .room-details__main_impression
+          h3 Впечатление от номера
+        .room-details__main_reviews
+          h3 Отзывы посетителей номера
+          +reviews({'avatar': '/assets/img/avatar.png', 'name': 'Мурад Сарафанов', 'desc': 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 'time': '5 дней назад', 'like': '17'})
+          +reviews({'avatar': '/assets/img/avatar-2.jpg', 'name': 'Патрисия Стеклышкова', 'desc': 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент', 'time': 'неделю назад', 'like': '2'})
+        .room-details__main_rules
+          h3 Правила
+          +bullet(['Нельзя с питомцами', 'Без вечеринок и анимаций', 'Время прибытия - после 13:00, а выезд до 12:00'])
+        .room-details__main_cancel
+          h3 Отмена
+          p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+      .room-details__main_block-2
+        .room-details__main_book-card
+          +book-card()
+    .room-details__footer
+      +footer-widgets()

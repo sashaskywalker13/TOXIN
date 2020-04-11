@@ -1,4 +1,4 @@
-import '../components/like button/button__like.js';
+import '../components/button-like/button__like.js';
 import '../components/input/__mask/input__mask.js';
 import '../components/dropdown/dropdown.js';
 import '../components/rangeSlider/rangeSlider.js';
