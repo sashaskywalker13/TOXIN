@@ -1,0 +1,28 @@
+extends ../components/main/main-base
+
+include ../components/header/header
+include ../components/sign-in-card/sign-in-card
+include ../components/footer-widgets/footer-widgets
+
+block description
+  meta(name="description" content="Компоненты нашего сайта.")
+
+block keywords
+  meta(name="keywords" content="")
+
+block title
+  title Отель Toxin | Страница с компонентами проекта
+
+block styles
+  link(rel="stylesheet" href="/assets/scss/Ui-Kit.scss")
+  //- link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+block content
+  .sign-in
+    .sign-in__header
+      +header()
+    .sign-in__main
+      .sign-in__main_card
+        +sign-in-card()
+    .sign-in__footer
+      +footer-widgets()

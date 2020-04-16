@@ -1,9 +1,14 @@
+@import '../buttons/button';
+@import '../input/input';
+@import '../radio/radio';
+@import '../toggle/toggle';
+
 .sign-up-card {
 	display: flex;
 	flex-direction: column;
 	width: 380px;
 	height: auto;
-	// background: #FFFFFF;
+	background: #FFFFFF;
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);

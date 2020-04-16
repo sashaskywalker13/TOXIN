@@ -1,7 +1,7 @@
 .search-room {
 	display: grid;
 	grid-template-columns:  27% 23% 25% 25%;
-	grid-templete-rows: auto;
+	grid-template-rows: auto;
 	grid-template-areas:
 		"header header header header"
 		"sidebar rooms rooms rooms"
@@ -31,7 +31,7 @@
 			&_room {
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-			grid-templete-rows: repeat(3, 1fr);
+			grid-template-rows: repeat(3, 1fr);
 			grid-column-gap: 12px;
 			grid-row-gap: 20px;
 			margin: 20px 0;
@@ -39,6 +39,7 @@
 			&_pagination {
 				display: flex;
 				justify-content: center;
+				margin-bottom: 70px;
 			}
 		}
 		&__footer {

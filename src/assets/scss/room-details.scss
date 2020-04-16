@@ -18,11 +18,9 @@
         }
         &_block {
             display: grid;
-            // align-items: stretch;
             grid-column-start: 1;
             grid-column-end: 3;
-            // justify-self: stretch;
-            // align-self: stretch;   
+
         }
         &_block-1 {
             display: grid;
